@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.student.miwok_stp.MainActivity"
+    android:background="@color/colorMainBackground">
+    <!-- Numbers category -->
+    <!--Using Frame Layout as in each textvview the background is set to be "selectableItemBackground",
+    so this backgriund shows a ripple animation i.e why using a frame layout so as to color the background orange in numbers
+    textview,blue in phrases textvview and so on.Because adding a "selectableItemBackground" changes
+    the text color as the same as the background color-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_numbers">
+    <TextView
+        android:id="@+id/numbersActivity"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="Numbers"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_phrases">
+    <TextView
+        android:id="@+id/phrasesActivity"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Phrases"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_colors">
+    <TextView
+        android:id="@+id/colorsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:paddingLeft="10dp"
+        android:text="Colors"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_family">
+    <TextView
+        android:id="@+id/familyActivity"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:text="Family"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    </FrameLayout>
+</LinearLayout>
